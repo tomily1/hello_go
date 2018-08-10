@@ -9,6 +9,17 @@ type Salutation struct {
 	greeting string
 }
 
+const ( // Make declaration brief and succinct
+	PI = 3.14
+	Language = "Go"
+)
+
+const (
+	A = iota // iota represents successive untyped integer constants... can be declared once also.
+	B = iota
+	C = iota
+)
+
 func main() {
 	/*
 	 * Types declaration
@@ -23,4 +34,7 @@ func main() {
 	fmt.Println(s.greeting)
 
 	fmt.Println(message)
+	fmt.Println(PI)
+	fmt.Println(Language)
+	fmt.Println(A, B, C)
 }
